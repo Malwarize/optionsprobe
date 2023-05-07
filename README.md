@@ -1,5 +1,14 @@
 # optionsprobe
 
+<p align=center>
+<image src="https://user-images.githubusercontent.com/130087473/236707399-c06afe92-9e51-42d0-bfa4-95937a36f6a6.png" />
+</p>
+<h2 align=center>probe urls with OPTIONS request</h2> 
+
+
+<hr>
+<br>
+
 ## Description
 #### take a list of urls from stdin and probe it with options method
 
@@ -33,11 +42,11 @@ cat urls.txt | optionsprobe -c 50 -t 5000
 ```
 
 ### tricks 
-you can use [assetfinder](https://github.com/tomnomnom/assetfinder) to get subdomains and then probe it with optionsprobe
+you can use [assetfinder](https://github.com/tomnomnom/assetfinder) to get subdomains then probe it with optionsprobe
 ```bash
 assetfinder example.com | optionsprobe
 ```
-or you can use [httprobe](https://github.com/tomnomnom/httprobe/) to get live urls and then probe it with optionsprobe
+or you can use [httprobe](https://github.com/tomnomnom/httprobe/) to get live urls then probe it with optionsprobe
 ```bash
 cat urls.txt | httprobe | optionsprobe
 ```
