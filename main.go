@@ -34,10 +34,10 @@ func main() {
 		if url[:4] != "http" || url[:5] != "https" {
 			url = "https://" + url
 		}
+		wg.Add(1)
 		go func(u string) {
 			defer func() { <-maxChan }()
 			defer wg.Done()
-			wg.Add(1)
 			p.OptionProbe(u)
 		}(url)
 	}
@@ -83,7 +83,7 @@ func (p *Probber) OptionProbe(url string) {
 	if err != nil {
 		return
 	}
-	go p.printMethods(url, resp)
+	p.printMethods(url, resp)
 }
 
 func (p *Probber) printMethods(url string, resp *http.Response) {
