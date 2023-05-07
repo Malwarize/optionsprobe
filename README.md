@@ -28,23 +28,33 @@ http://example.com/ PUT
 ```
 
 ### control concurrency and timeout
-``` 
+```bash
 cat urls.txt | optionsprobe -c 50 -t 5000
 ```
 
+### tricks 
+you can use [assetfinder](https://github.com/tomnomnom/assetfinder) to get subdomains and then probe it with optionsprobe
+```bash
+assetfinder example.com | optionsprobe
+```
+or you can use [httprobe](https://github.com/tomnomnom/httprobe/) to get live urls and then probe it with optionsprobe
+```bash
+cat urls.txt | httprobe | optionsprobe
+```
 
 ## install
-```
+```bash
 go install github.com/XORbit01/optionsprobe@latest
 ```
 
 ## build
-```
+```bash
 git clone https://github.com/XORbit01/optionsprobe.git
 cd optionsprobe
 go build -o optionsprobe 
 ./optionsprobe
 ```
+
 ### Binary Release
 you can download the binary from release page 
 [Releases](https://github.com/XORbit01/optionsprobe/releases/latest)
