@@ -41,6 +41,10 @@ or you can use [httprobe](https://github.com/tomnomnom/httprobe/) to get live ur
 ```bash
 cat urls.txt | httprobe | optionsprobe
 ```
+get only POST urls
+```bash
+cat urls.txt | optionsprobe | grep POST
+```
 
 ## install
 ```bash
