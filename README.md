@@ -57,12 +57,12 @@ cat urls.txt | optionsprobe | grep POST
 
 ## install
 ```bash
-go install github.com/XORbit01/optionsprobe@latest
+go install github.com/Malwarize/optionsprobe@latest
 ```
 
 ## build
 ```bash
-git clone https://github.com/XORbit01/optionsprobe.git
+git clone https://github.com/Malwarize/optionsprobe.git
 cd optionsprobe
 go build -o optionsprobe 
 ./optionsprobe
@@ -70,7 +70,7 @@ go build -o optionsprobe
 
 ### Binary Release
 you can download the binary from release page 
-[Releases](https://github.com/XORbit01/optionsprobe/releases/latest)
+[Releases](https://github.com/Malwarize/optionsprobe/releases/latest)
 
 ## Contributing
 Pull requests are welcome. please open an issue first to discuss what you would like to change.

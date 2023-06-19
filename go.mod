@@ -1,3 +1,3 @@
-module github.com/XORbit01/optionsprobe
+module github.com/Malwarize/optionsprobe
 
 go 1.20
